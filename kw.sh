@@ -112,6 +112,13 @@ function kw()
         kworkflow-help
       )
       ;;
+    search)
+      (
+        . $src_script_path/utils.sh --source-only
+
+        search "$@"
+      )
+      ;;
     *)
       (
         . $src_script_path/utils.sh --source-only
